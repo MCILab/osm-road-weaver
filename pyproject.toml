@@ -7,7 +7,14 @@ authors = [
     { name = "khoa_vu", email = "anhkhoakioku@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "duckdb>=1.5.6",
+    "osmnx>=2.1.1",
+    "pyarrow>=25.0.1",
+    "pyproj>=3.8.0",
+    "quackosm>=0.19.0",
+    "shapely>=2.2.0",
+]
 
 [project.scripts]
 osm-way-stroke = "osm_road_weaver.cli:main"
