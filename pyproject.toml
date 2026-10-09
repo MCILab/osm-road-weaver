@@ -17,7 +17,7 @@ dependencies = [
 ]
 
 [project.scripts]
-osm-way-stroke = "osm_road_weaver.cli:main"
+osm-road-weaver = "osm_road_weaver.cli:main"
 
 [build-system]
 requires = ["hatchling"]
