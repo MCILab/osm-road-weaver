@@ -168,7 +168,7 @@ def write_road_ways(
             output_schema = reader.schema.with_metadata(
                 {
                     b"geo": json.dumps(metadata).encode(),
-                    b"osm_way_stroke": json.dumps(provenance or {}, ensure_ascii=False).encode(),
+                    b"osm_road_weaver": json.dumps(provenance or {}, ensure_ascii=False).encode(),
                 }
             )
             staged = temporary_path / "ways.parquet"

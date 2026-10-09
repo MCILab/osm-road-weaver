@@ -160,4 +160,4 @@ def test_real_writer(monkeypatch, boundary, source_factory, tmp_path, spatial_ex
         table = pq.read_table(result.path)
         assert result.way_count == table.num_rows == 1
         assert table["osm_way_id"].to_pylist() == [1]
-        assert json.loads(table.schema.metadata[b"osm_way_stroke"])["osm_relation_id"] == 123
+        assert json.loads(table.schema.metadata[b"osm_road_weaver"])["osm_relation_id"] == 123
