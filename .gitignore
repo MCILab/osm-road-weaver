@@ -12,3 +12,6 @@ dist/
 .env.*
 !.env.example
 .DS_Store
+.cache/
+data/
+.ipynb_checkpoints/
