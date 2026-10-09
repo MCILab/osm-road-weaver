@@ -77,7 +77,7 @@ def test_filter_schema_metadata_and_rerun(source_factory, tmp_path, spatial_exte
         assert geo["columns"]["geometry"]["encoding"] == "WKB"
         assert geo["columns"]["geometry"]["geometry_types"] == ["LineString"]
         assert CRS(geo["columns"]["geometry"]["crs"]).equals(CRS(4326))
-        assert json.loads(metadata[b"osm_way_stroke"]) == {"region": "Hà Nội"}
+        assert json.loads(metadata[b"osm_road_weaver"]) == {"region": "Hà Nội"}
     assert not list(output.parent.glob(".osm-ways-*"))
 
 
